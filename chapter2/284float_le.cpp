@@ -23,6 +23,8 @@ int float_le(float x, float y) {
 }
 
 int main(int argc, char* argv[]) {
+    int res = f2u(3.14);
+
     assert(float_le(-0, +0));
     assert(float_le(+0, -0));
     assert(float_le(0, 3));
