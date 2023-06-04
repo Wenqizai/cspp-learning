@@ -1,6 +1,3 @@
-/*
- * float-le.c 不懂
- */
 #include <stdio.h>
 #include <assert.h>
 
@@ -8,6 +5,11 @@ unsigned f2u(float x) {
     return *(unsigned*)&x;
 }
 
+/*
+    test x <= y ?
+    true  : return 1
+    false : return 0
+*/
 int float_le(float x, float y) {
     unsigned ux = f2u(x);
     unsigned uy = f2u(y);
