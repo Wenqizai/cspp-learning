@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
-	A. ÏÂÃæ×Ö¶ÎµÄÆ«ÒÆÁ¿ÊÇ¶àÉÙ? ÒÔ×Ö½ÚÎªµ¥Î»
+	A. ä¸‹é¢å­—æ®µçš„åç§»é‡æ˜¯å¤šå°‘? ä»¥å­—èŠ‚ä¸ºå•ä½
 
 	p: 8  
 	s.x: 4
@@ -9,9 +9,9 @@
 	next: 8
 
 
-	B. Õâ¸ö½á¹¹ÌåÐèÒª¶àÉÙ×Ö½Ú?
+	B. è¿™ä¸ªç»“æž„ä½“éœ€è¦å¤šå°‘å­—èŠ‚?
 
-	24 ×Ö½Ú
+	24 å­—èŠ‚
 
 */
 struct prob {
@@ -24,7 +24,7 @@ struct prob {
 };
 
 /*
-	»ã±à´úÂëÈçÏÂ, ²¹³äÍê³ÉÏÂÃæ C ±í´ïÊ½
+	æ±‡ç¼–ä»£ç å¦‚ä¸‹, è¡¥å……å®Œæˆä¸‹é¢ C è¡¨è¾¾å¼
 
 
 	void sp_init(struct prob* sp)

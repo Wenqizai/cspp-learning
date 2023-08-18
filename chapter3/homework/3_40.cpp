@@ -14,7 +14,7 @@ void fix_set_diag(fix_matrix A, int val) {
 }
 
 /*
-	µ±ÒÔÓÅ»¯µÈ¼¶ -O1 ±àÒëÊ±, GCC²úÉúÈçÏÂ»ã±à´úÂë:
+	å½“ä»¥ä¼˜åŒ–ç­‰çº§ -O1 ç¼–è¯‘æ—¶, GCCäº§ç”Ÿå¦‚ä¸‹æ±‡ç¼–ä»£ç :
 
 	fix_set_diag:
 
