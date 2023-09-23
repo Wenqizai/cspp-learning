@@ -14,13 +14,21 @@
 	9: 计算数组被分成 8 份后每份的大小, 利用移位操作加强除法的效率, 可能会有舍位, 但接近 8 倍
 	10: 访问数组起始位置, p[0], 复制值到 %r8
 
+	C. 补充完整下列的值
 
+
+		n		s1			s2		p		e1		e2
+		5		2065		2017	2024	1		7	
+		
+		6		2064		2000	2007	16		0
 
 
 */
 
+#define n 10
+#define idx 5
 
-long vframe(long n, long idx, long* q) {
+long vframe(long* q) {
 	long i;
 	long* p[n];
 	p[0] = &i;
