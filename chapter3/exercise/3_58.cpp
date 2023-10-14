@@ -21,5 +21,5 @@ long decode2(long x, long y, long z) {
 	long a = y - z;
 	long b = x * a;
 	a << 63 >> 63;
-	return a | b;
+	return a ^ b;
 }
