@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int R = 0;
-int S = 0;
-int T = 0;
+#define R 7
+#define S 5
+#define T 13
 
 long A[R][S][T];
 
