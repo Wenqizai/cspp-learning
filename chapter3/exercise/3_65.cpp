@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-#define M 10
+#define M 15
 
 /*
 	优化等级 -o1 编译, GCC 产生如下内循环代码:
