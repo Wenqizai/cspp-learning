@@ -29,33 +29,21 @@
 	long rsum(long* start, long count)
 	start in %rdi, count in %rsi
 
-	absSum:
-		irmovq	$8, %r8		# constant 8
-		irmovq	$1, %r9		# constant 1
-		xorq	%rax, %rax	# sum = 0
-		andq	%rsi, %rsi	# set condition code
-		jmp		test
-	
-	loop: 
-		mrmovq	(%rdi), %r10	# x = *start
-		xorq	%r11, %r11		# constant 0
-		subq	%r10, %r11		# -x
-		jle		pos				# skip if -x <= 0
-		rrmovq	%r11, %r10		# x = -x
-
-	pos: 
-		addq	%r10, %rax		# add to sum
-		addq	%r8, %rdi		# start ++
-		subq	%r9, %rsi		# count --
-
-	test:
-		jne		loop		# stop when 
-		ret
-
-
-
-	搞不懂
-
+	rsum:
+		xorq	%rax, %rax
+		andq	%rsi, %rsi
+		jle		.L9
+		pushq	%rbx
+		mrmovq	(%rdi), %rbx
+		irmovq	$-1, %r10
+		subq	%r10, %rsi	# count --
+		irmovq  $8, %r10
+		addq	%r10, %rdi	# start ++
+		call	rsum
+		addq	%rbx, %rax
+		popq	%rbx
+	.L9:
+		rep; ret
 
 */
 long rsum(long* start, long count) {
